@@ -396,14 +396,31 @@ li {
     appearance: none;
 }
 
-.submitBtn,
-.submitBtn:hover {
+.agreeRadioWrapr .form-wrapr .form-inpt:hover,
+.commentAreaWrapr .commentTxtBx:hover {
+    border-color: #0C3B55;
+}
+
+.submitBtn{
     background: #E5972A;
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
     color: #FFFFFF;
-    padding: 8px 32px;
+    text-transform: uppercase;
+    padding: 10px 32px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.calendarBar .applyBtn:hover,
+.submitBtn:hover {
+    background: #fff;
+    color: #E5972A;
+    border-color: #E5972A;
 }
 
 @media screen and (max-width:992px) {

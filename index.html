@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacks Fiscal Admin Dashboard</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="mainWrapr">
+        <header class="mainHeadr ">
+            <nav class="navbar navbar-expand navbar-light bg-white" aria-label="main navbar">
+                <div class="container">
+                    <a class="navbar-brand p-0" href="index chart.html">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeadr-nav" aria-controls="mainHeadr-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainHeadr-nav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle userAccount d-flex align-items-center pe-0" id="userDropDown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="userAccountTxt text-end pe-2">
+                                        Welcome<span class="userAccountName d-block ps-1">AAKRITI WALIA</span>
+                                    </span>
+                                    <img src="assets/images/user-icon.png" alt="user icon" class="img-fluid">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="userDropDown">
+                                    <li><a class="dropdown-item" href="#">New project</a></li>
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="mainCntnt">
+            <div class="calendarBar py-3 position-relative">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-5 col-12 order-lg-2 d-flex justify-content-lg-end align-self-start">
+                            <div class="slctMonth me-2">
+                                <span class="slctMonth-icon">
+                                    <img src="assets/images/calendar-icon.svg" alt="calendar icon" class="img-fluid">
+                                </span>
+                                <select class="slctMonth-list">
+                                    <option value="NA">Select Month</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btn applyBtn ms-4">Apply</button>
+
+                        </div>
+                        <div class="col-lg-7 col-12 order-lg-1 d-flex pt-lg-0 pt-3">
+                            <div class="container-fluid p-0">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm col-12 pb-md-0 pb-2">
+                                        <div class="detailCard">
+                                            <div class="detailCard-txt ">
+                                                <h5 class="detailCard-head mb-0"><span class="detailCard-headBold">Final</span> Score</h5>
+                                                <p class="detailCard-score mb-0">1.45</p>
+                                            </div>
+                                            <span class="detailCard-icn">
+                                        <img src="assets/images/rating-icon.png" alt="final score icon" class="img-fluid">
+                                    </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm col-12 pb-md-0 pb-2">
+                                        <div class="detailCard  ">
+                                            <div class="detailCard-txt">
+                                                <h5 class="detailCard-head mb-0"><span class="detailCard-headBold">Rank</span> out of 121</h5>
+                                                <p class="detailCard-score mb-0">107</p>
+                                            </div>
+                                            <span class="detailCard-icn ">
+                                        <img src="assets/images/trophy-icon.svg" alt="trophy icon" class="img-fluid">
+                                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summaryContainr pb-3">
+                <div class="container">
+                    <div class="summaryWrapr">
+                        <h4 class="summary-head">
+                            <span class="summary-headBold">Summary</span> April Fiscal
+                        </h4>
+                        <div class="summary-tableWrapr overflow-auto">
+                            <table class="table table-borderless table-striped summary-table mb-0">
+                                <colgroup>
+                                    <col style="width: 25%; min-width: 250px;">
+                                    <col style="width: 25%; min-width: 250px;">
+                                    <col style="width: 25%; min-width: 250px;">
+                                    <col style="width: 25%; min-width: 250px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Parameter</th>
+                                        <th scope="col">Target</th>
+                                        <th scope="col">Value</th>
+                                        <th scope="col">Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>AICR</td>
+                                        <td data-targetcol="68"></td>
+                                        <td data-valuecol="59.4"></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="score-bar" role="scorebar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5"></div>
+                                                <span class="progress-barTxt ps-1">1.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>NPS</td>
+                                        <td data-targetcol="20"></td>
+                                        <td data-valuecol="4.7"></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="score-bar" role="scorebar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5"></div>
+                                                <span class="progress-barTxt ps-1">1.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sentiment Score</td>
+                                        <td data-targetcol="33"></td>
+                                        <td data-valuecol="10.3"></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="score-bar" role="scorebar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5"></div>
+                                                <span class="progress-barTxt ps-1">1.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>XM Sales</td>
+                                        <td data-targetcol="1"></td>
+                                        <td data-valuecol="0.0"></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="score-bar" role="scorebar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5"></div>
+                                                <span class="progress-barTxt ps-1">1.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sales (GSR)</td>
+                                        <td data-targetcol="5"></td>
+                                        <td data-valuecol="2.2"></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="score-bar" role="scorebar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5"></div>
+                                                <span class="progress-barTxt ps-1">1.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ITG Compliance%</td>
+                                        <td data-targetcol="80"></td>
+                                        <td data-valuecol="57"></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="score-bar" role="scorebar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5"></div>
+                                                <span class="progress-barTxt ps-1">1.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Multi ITG</td>
+                                        <td data-targetcol="1.2"></td>
+                                        <td data-valuecol="1.31"></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="score-bar" role="scorebar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5"></div>
+                                                <span class="progress-barTxt ps-1">2.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Attendance</td>
+                                        <td data-targetcol="20.50"></td>
+                                        <td data-valuecol="19.5"></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="score-bar" role="scorebar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5"></div>
+                                                <span class="progress-barTxt ps-1">3.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>NTT%</td>
+                                        <td data-targetcol="20"></td>
+                                        <td data-valuecol="28"></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="score-bar" role="scorebar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5"></div>
+                                                <span class="progress-barTxt ps-1">1.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Transfer%</td>
+                                        <td data-targetcol="8"></td>
+                                        <td data-valuecol="9.0"></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="score-bar" role="scorebar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5"></div>
+                                                <span class="progress-barTxt ps-1">3.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Client Escalation</td>
+                                        <td data-targetcol="0"></td>
+                                        <td data-valuecol="0"></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="score-bar" role="scorebar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="5"></div>
+                                                <span class="progress-barTxt ps-1">0.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Internal Violation Grid</td>
+                                        <td data-targetcol="0"></td>
+                                        <td data-valuecol="0"></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="score-bar" role="scorebar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="5"></div>
+                                                <span class="progress-barTxt ps-1">0.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>AHT</td>
+                                        <td data-targetcol="840 ; sec"></td>
+                                        <td data-valuecol="784 ; sec"></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="score-bar" role="scorebar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5"></div>
+                                                <span class="progress-barTxt ps-1">5.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summaryAcknwledgeContainr">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-3 col-md-4 col-sm-5 col-12 pb-2">
+                            <label class="chkbxWrapr">
+                                <input type="checkbox" class="form-inpt" checked="checked">
+                                <span class="chkbx"></span>
+                                I ACKNOWLEDGE
+                            </label>
+                        </div>
+                        <div class="col-md-5 col-12 pb-3">
+                            <div class="agreeRadioWrapr">
+                                <div class="form-wrapr pe-3 me-3">
+                                    <input class="form-inpt" type="radio" name="agreeData" id="agreeRadioBtn">
+                                    <label class="form-labl" for="agreeRadioBtn">
+                                      Agree
+                                    </label>
+                                </div>
+                                <div class="form-wrapr">
+                                    <input class="form-inpt" type="radio" name="agreeData" id="disagreeRadioBtn" checked>
+                                    <label class="form-labl" for="disagreeRadioBtn">
+                                      Disagree
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="commentAreaWrapr pt-2">
+                                <textarea class="commentTxtBx" rows="3" placeholder="type your comments here..." id="commentArea"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 align-self-end pb-3">
+                            <button type="button" class="btn submitBtn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

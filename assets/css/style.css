@@ -239,9 +239,10 @@ li {
     display: flex;
 }
 
-.summary-table .filledBar rect {
-    width: 16px;
-    x: 0;
+.summary-table .highcharts-container text {
+    fill: #e5972a!important;
+    font-size: 12px!important;
+    transform: translateY(-2px);
 }
 
 .summary-table .progress-barTxt {
@@ -266,7 +267,7 @@ li {
 }
 
 .score-bar .scoreVal.filled {
-    background: #BAD2F8;
+    background: #3dbcf1;
 }
 
 
@@ -325,11 +326,11 @@ li {
     left: 50%;
     border-left: 3px solid #fff;
     border-bottom: 3px solid #fff;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-    -moz-transform: translate(-50%, -50%) rotate(-45deg);
-    -ms-transform: translate(-50%, -50%) rotate(-45deg);
-    -o-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -75%) rotate(-45deg);
+    -webkit-transform: translate(-50%, -75%) rotate(-45deg);
+    -moz-transform: translate(-50%, -75%) rotate(-45deg);
+    -ms-transform: translate(-50%, -75%) rotate(-45deg);
+    -o-transform: translate(-50%, -75%) rotate(-45deg);
 }
 
 .container input:checked~.chkbx:after {
